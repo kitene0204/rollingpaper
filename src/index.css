@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #FAF2DE;
+    --ink: #3E362B;
+    --sub: #9C8C6E;
+    --line: #EADFC2;
+    --pencil: #DBCBA5;
+    --point: #8A6D3F;
+    --point-dark: #6F5730;
+    --card: #FFFCF1;
+    --paper: #FFFCF4;
+    --err: #B3452F;
+  }
+
+  body {
+    font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--ink);
+    background-color: var(--bg);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
+    min-height: 100dvh;
+    word-break: keep-all;
+  }
+}
+
+.font-gaegu {
+  font-family: 'Gaegu', cursive, sans-serif;
+}
+
+@keyframes sway-anim {
+  0%, 100% { transform: rotate(-1.4deg); }
+  50% { transform: rotate(1.6deg); }
+}
+
+.animate-sway {
+  animation: sway-anim 4.6s ease-in-out infinite;
+  transform-origin: 50% -12px;
+}
+
+.animate-sway:nth-child(2n) {
+  animation-delay: -1.4s;
+}
+
+.animate-sway:nth-child(3n) {
+  animation-delay: -2.7s;
+}
+
+/* 6 pastel tones */
+.tone-0 { background: linear-gradient(162deg, #FDF4D8, #F6E6B6); }
+.tone-1 { background: linear-gradient(162deg, #EEF5DA, #DAE8BE); }
+.tone-2 { background: linear-gradient(162deg, #FDE8DB, #F7D2C0); }
+.tone-3 { background: linear-gradient(162deg, #E7EDEF, #CFDEE5); }
+.tone-4 { background: linear-gradient(162deg, #FEF0BE, #F8DF9B); }
+.tone-5 { background: linear-gradient(162deg, #F6EBEF, #E6D6E2); }
+
+/* Note writing paper lined background */
+.lined-paper {
+  background-color: #FFFCF4;
+  background-image: repeating-linear-gradient(to bottom, transparent 0 33px, #F0E3C6 33px 34px);
+  background-position: 0 11px;
+  background-attachment: local;
+}
