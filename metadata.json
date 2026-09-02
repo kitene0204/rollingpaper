@@ -1,6 +1,6 @@
 {
   "name": "온라인 롤링페이퍼",
-  "description": "구글 스프레드시트 및 GAS 기반 설정과 연동 가능한 감성적인 온라인 롤링페이퍼 웹 애플리케이션",
+  "description": "따뜻한 마음을 담아 전하는 온라인 롤링페이퍼",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
